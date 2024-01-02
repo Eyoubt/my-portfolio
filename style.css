@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* General */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,8 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #0f0f47;
+  color: #fff;
 }
 
 html {
@@ -14,7 +18,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(187, 180, 180);
 }
 
 /* TRANSITION */
@@ -41,7 +45,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -83,7 +87,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   transition: all 0.3 ease-in-out;
 }
 
@@ -131,9 +135,11 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+
 .hamburger-icon span:nth-child(2) {
   opacity: 1;
 }
+
 .hamburger-icon span:last-child {
   transform: none;
 }
@@ -198,14 +204,19 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 /* ICONS */
 
 .icon {
-  cursor: pointer;
   height: 2rem;
+  color: #0addd9;
+}
+
+#socials-container .icon:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 /* BUTTONS */
@@ -222,40 +233,40 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  color: #0addd9;
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #0addd9 0.1rem solid;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #fff;
+  color: #0f0f47;
+  border-color: transparent;
 }
 
 .btn-color-2 {
-  background: none;
+  background: #0f0f47;
 }
 
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+.btn-color-1 {
+  background: #0addd9;
+  color: #0f0f47;
 }
 
 /* ABOUT SECTION */
 
 #about {
   position: relative;
+}
+
+#about .title {
+  color: #0addd9;
+  font-size: 2rem;
 }
 
 .about-containers {
@@ -287,11 +298,16 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: #08083e;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: 1px solid transparent;
   text-align: center;
+}
+
+.details-container:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+  cursor: default;
 }
 
 .section-container {
@@ -305,10 +321,19 @@ section {
   position: relative;
 }
 
+#experience .title {
+  color: #0addd9;
+  font-size: 2rem;
+}
+
+#experience .icon {
+  margin-top: 5px;
+}
+
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: #0addd9;
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
@@ -343,6 +368,11 @@ article .icon {
   position: relative;
 }
 
+#projects .title {
+  color: #0addd9;
+  font-size: 2rem;
+}
+
 .project-img {
   border-radius: 2rem;
   width: 90%;
@@ -351,12 +381,7 @@ article .icon {
 
 .project-title {
   margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+  color: #d6c1c1;
 }
 
 /* CONTACT */
@@ -366,6 +391,11 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+}
+
+#contact .title {
+  color: #0addd9;
+  font-size: 2rem;
 }
 
 .contact-info-upper-container {
@@ -391,21 +421,33 @@ article .icon {
   font-size: larger;
 }
 
-.contact-icon {
-  cursor: default;
+.contact-info-container p a {
+  color: #bcb2b2;
 }
 
-.email-icon {
-  height: 2.5rem;
+.contact-icon {
+  cursor: default;
+  margin-top: 10px;
+}
+
+.arrow:hover {
+  color: white;
+  cursor: pointer;
 }
 
 /* FOOTER SECTION */
 
 footer {
+  background: #0addd9;
   height: 26vh;
   margin: 0 1rem;
 }
 
 footer p {
   text-align: center;
+  color: black;
+}
+
+footer a {
+  color: black;
 }
